@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Page web sur les couleurs en informatique et le codage RVB">
+    <title>Couleurs</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <h1 class="centre">Les couleurs en informatique et le codage RVB</h1>
+
+    <h2>Les couleurs primaires rouge, vert, bleu</h2>
+    <div class="chapitre">
+        <div class="illustration">
+            <img src="images/rvb.png" alt="Couleurs RVB">
+            <p class="centre">Image : <a href="https://redfox.fr/difference-entre-cmjn-et-rvb/" target="_blank">redfox.fr</a></p>
+        </div>
+        Dans un système de synthèse de couleurs, une couleur primaire est une couleur qui ne peut pas être reproduite par un mélange d'autres couleurs. Plusieurs couleurs peuvent être primaires entre elles lorsqu'on ne peut pas en reproduire une par un mélange des autres.
+        <br>
+        On sélectionne au moins 3 couleurs primaires, en prenant en considération les moyens techniques de les obtenir, quand on réalise un procédé de synthèse de couleurs. Par exemple, on prend une couleur primaire dans chacun des champs chromatiques rouge, vert, bleu.
+        <br>
+        <br>
+        La synthèse additive des couleurs est le procédé qui consiste à superposer les lumières de différentes sources colorées dans l'objectif d'obtenir une lumière colorée choisie. Elle utilise les 3 lumières colorées : rouge, vert et bleu. Leur addition (superposition) donne une lumière blanche tandis que l'absence de lumière donne du noir.
+    </div>
+
+    <h2>Le codage informatique RVB des couleurs</h2>
+    <div class="chapitre">
+        <div class="illustration">
+            <img src="images/pixel.png" alt="Pixel RVB">
+            <p class="centre">Image : <a href="https://stephane-bonnaud.fr/codage-rvb-debit-binaire-images-numeriques/" target="_blank">stephane-bonnaud.fr</a></p>
+        </div>
+        Le codage informatique des couleurs est l'ensemble des conventions qui permettent d'afficher (ou d'imprimer) une image en couleurs. Il utilise la synthèse additive trichrome (procédé permettant de reproduire un très grand nombre de couleurs à partir de trois couleurs primaires) des couleurs.
+        <br>
+        L'image est toujours matricielle (constituée d'une grille) au niveau du périphérique qui l'affiche, et où chaque pixel est un triplet de valeurs (rouge, vert, bleu).
+        <br>
+        <br>
+        Un des systèmes de codage informatique des couleurs le plus proche du matériel est le codage RVB (RGB en anglais) : Rouge, vert, bleu (Red, green, blue). Il est utilisé par les écrans d'ordinateurs pour obtenir de la couleur (synthèse additive). Ce codage indique une valeur (par exemple comprise entre 0 et 255) pour chacune des couleurs primaires.
+    </div>
+
+    <h2>Mélangeur de couleurs</h2>
+    <noscript>JavaScript doit être activé !</noscript>
+    <p>
+        R : <input type="number" id="rouge_saisie" value="0" step="1" min="0" max="255" placeholder="0-255"> <button id="rouge_bouton_moins">-</button> <button id="rouge_bouton_plus">+</button> → <span id="rouge_texte">0</span>
+        <br>
+        V : <input type="number" id="vert_saisie" value="0" step="1" min="0" max="255" placeholder="0-255"> <button id="vert_bouton_moins">-</button> <button id="vert_bouton_plus">+</button> → <span id="vert_texte">0</span>
+        <br>
+        B : <input type="number" id="bleu_saisie" value="0" step="1" min="0" max="255" placeholder="0-255"> <button id="bleu_bouton_moins">-</button> <button id="bleu_bouton_plus">+</button> → <span id="bleu_texte">0</span>
+    </p>
+    <p>Le code couleur Hexadécimal résultant : #<span id="hexa">000000</span></p>
+    <div id="cadre"></div>
+
+    <h2>Sources</h2>
+    <p>
+        Les couleurs primaires rouge, vert, bleu : 
+        <br>
+        <a href="https://fr.wikipedia.org/wiki/Synthèse_additive" target="_blank">Wikipédia : Synthèse additive</a>
+        <br>
+        <a href="https://fr.wikipedia.org/wiki/Couleur_primaire" target="_blank">Wikipédia : Couleur primaire</a>
+        <br>
+        <br>
+        Le codage informatique RVB des couleurs : 
+        <br>
+        <a href="https://fr.wikipedia.org/wiki/Rouge_vert_bleu" target="_blank">Wikipédia : Rouge vert bleu</a>
+        <br>
+        <a href="https://fr.wikipedia.org/wiki/Codage_informatique_des_couleurs" target="_blank">Wikipédia : Codage informatique des couleurs</a>
+        <br>
+        <br>
+        Icône conçue par <a href="https://www.freepik.com" target="_blank">Freepik</a> sur <a href="https://www.flaticon.com/fr/" target="_blank">www.flaticon.com</a>
+    </p>
+</body>
+</html>
